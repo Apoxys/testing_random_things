@@ -12,3 +12,6 @@ class Test_Func(unittest.TestCase):
     def test_mul(self):
         x = math_functions(3, 4)
         self.assertEqual(x.mul(), 12)
+
+if __name__ == "__main__":
+    unittest.main()
