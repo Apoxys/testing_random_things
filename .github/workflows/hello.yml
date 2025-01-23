@@ -6,8 +6,10 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+        
       - name: Checkout
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
+        
       - name: math-check
         run: |
           python -m unittest test_math_func.py
