@@ -9,4 +9,5 @@ jobs:
       - name: math-check
         run: |
           cd ..
+          cd ..
           python -m unittest test_math_func.py
