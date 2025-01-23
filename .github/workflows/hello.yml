@@ -7,4 +7,6 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
       - name: math-check
-        run: test_math_func.py
+        run: |
+          cd ..
+          python -m unittest test_math_func.py
